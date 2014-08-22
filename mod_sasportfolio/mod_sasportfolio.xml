@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>mod_sasportfolio</name>
+    <author>Shusmita Anwar Sharna</author>
+    <version>1.0.0</version>
+    <description>Portfolio Module</description>
+    <files>
+        <filename>mod_sasportfolio.xml</filename>
+        <filename module="mod_sasportfolio">mod_sasportfolio.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <help key="JHELP_EXTENSIONS_MODULE_MANAGER_SASPORTFOLIO" />
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/administrator/components/com_k2/elements/">
+              <field name="category_id" type="categoriesmultiple" default="" label="K2_SELECT_ONE_OR_MORE_CATEGORIES" description="K2_SELECT_ONE_ORE_MORE_CATEGORIES_FOR_WHICH_YOU_WANT_TO_FILTER_AN_ITEMS_LIST_SELECT_NONE_TO_FETCH_ITEMS_FROM_ALL_CATEGORIES"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

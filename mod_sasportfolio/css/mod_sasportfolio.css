@@ -1,0 +1,145 @@
+/*portfolio module setup======*/
+
+#filters li {
+    cursor:pointer;
+
+}
+
+.pcontainer{
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0px;
+  background: transparent;
+  
+  -webkit-backface-visibility: hidden;
+}
+
+.pcontainer:after{
+  /*content: '';
+  display: inline-block;
+  width: 100%;*/
+}
+
+.pcontainer .mix{
+ display: inline-block;
+  width: 49%;
+}
+
+.pcontainer .mix{
+ /* text-align: left;
+  background: transparent;
+  margin-bottom: 2%;*/
+  display: none;
+}
+
+
+.pcontainer .mix:after{
+  /*content: attr(data-myorder);
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4% 6%;
+  font-weight: 700;*/
+}
+
+.pcontainer .mix:before{
+  /*content: '';
+  display: inline-block;
+  padding-top: 60%;*/
+}
+/*
+@media all and (min-width: 420px){
+  .pcontainer .mix{
+    width: 32%;
+  }
+}
+
+@media all and (min-width: 640px){
+  .pcontainer .mix{
+    width: 23.5%;
+  }
+}
+*/
+/*portfolio module style======*/
+#filters {
+    padding: 0px;
+    margin: 0px auto;
+    float: none;
+    list-style: none outside none;
+    text-align: center;
+}
+#filters li {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px;
+    background-color: #FFF;
+    cursor: pointer;
+    color: #999;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+#filters li:hover, #filters li.active {
+    background-color: #D95C5C;
+    color: #FFF;
+}
+#grid {
+    padding: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+#grid:after {
+    clear: both;
+}
+#grid li {
+    cursor: pointer;
+    width: 25%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+
+}
+
+.item_info {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    right: 100%;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+    padding: 40px 20px;
+    color: #FFF;
+    text-align: center;
+}
+.item_info span {
+    display: block;
+    text-transform: uppercase;
+}
+.project-name {
+    font-size: 18px;
+}
+.item_info  {
+    color: #FFF;
+    text-align: center;
+}
+#grid li:hover .item_info {
+    background-color: #D95C5C;
+    opacity: .9;
+    right: 0px;
+}
+#grid li img {
+    width: 100%;
+}
+
+
+
+
+
+
