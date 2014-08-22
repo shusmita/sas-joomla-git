@@ -131,7 +131,7 @@
 }
 #grid li:hover .item_info {
     background-color: #D95C5C;
-    opacity: 1;
+    opacity: .9;
     right: 0px;
 }
 #grid li img {
